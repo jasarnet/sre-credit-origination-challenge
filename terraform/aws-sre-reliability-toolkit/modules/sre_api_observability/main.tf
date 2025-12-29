@@ -8,8 +8,8 @@ resource "aws_cloudwatch_metric_alarm" "latency_sli" {
   statistic           = "Average"
   threshold           = var.latency_threshold
 
-  alarm_description = "Se excedió el umbral de latencia del SLI para ${var.service_name}"
-  alarm_actions     = var.alarm_actions
+  alarm_description   = "Se excedió el umbral de latencia del SLI para ${var.service_name}"
+  alarm_actions       = var.alarm_actions
 }
 
 resource "aws_cloudwatch_metric_alarm" "error_rate_sli" {
@@ -22,39 +22,39 @@ resource "aws_cloudwatch_metric_alarm" "error_rate_sli" {
   statistic           = "Sum"
   threshold           = var.error_threshold
 
-  alarm_description = "Se excedió el umbral de tasa de errores del SLI para ${var.service_name}"
-  alarm_actions     = var.alarm_actions
+  alarm_description   = "Se excedió el umbral de tasa de errores del SLI para ${var.service_name}"
+  alarm_actions       = var.alarm_actions
 }
 
 resource "aws_cloudwatch_dashboard" "sre_dashboard" {
-  dashboard_name = "${var.service_name}-sre-dashboard"
+  dashboard_name      = "${var.service_name}-sre-dashboard"
 
-  dashboard_body = jsonencode({
+  dashboard_body      = jsonencode({
     widgets = [
       {
-        type   = "metric"
-        width  = 12
-        height = 6
-        properties = {
-          title = "SLI de Latencia"
-          metrics = [
+        type          = "metric"
+        width         = 12
+        height        = 6
+        properties    = {
+          title       = "SLI de Latencia"
+          metrics     = [
             [ var.metric_namespace, var.sli_latency_metric ]
           ]
-          stat   = "Average"
-          period = 60
+          stat       = "Average"
+          period     = 60
         }
       },
       {
-        type   = "metric"
-        width  = 12
-        height = 6
-        properties = {
-          title = "SLI de Tasa de Errores"
-          metrics = [
+        type         = "metric"
+        width        = 12
+        height       = 6
+        properties   = {
+          title      = "SLI de Tasa de Errores"
+          metrics    = [
             [ var.metric_namespace, var.sli_error_metric ]
           ]
-          stat   = "Sum"
-          period = 60
+          stat       = "Sum"
+          period     = 60
         }
       }
     ]
