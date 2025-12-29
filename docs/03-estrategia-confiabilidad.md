@@ -42,10 +42,10 @@ Disponibilidad = (Respuestas exitosas (HTTP 2xx, 3xx) / Total de solicitudes) ×
 - Application Load Balancer (ALB): métricas de *RequestCount* y códigos HTTP.
 
 **Ejemplo:**
-- **Datos:** 98,500 respuestas 2xx/3xx de 98,700 solicitudes.
+- **Datos:** 63,300 respuestas 2xx/3xx de 6,500 solicitudes.
 - **Cálculo:**
 
-Disponibilidad = (98,500 / 98,700) × 100 = **99.80%**
+Disponibilidad = (6,300 / 6,500) × 100 = **98.43%**
 
 **Notas:**
 - No se incluyen errores 4xx, ya que son errores del cliente atribuibles a validaciones.
