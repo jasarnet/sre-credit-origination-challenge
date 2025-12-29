@@ -8,7 +8,7 @@ resource "aws_cloudwatch_metric_alarm" "latency_sli" {
   statistic           = "Average"
   threshold           = var.latency_threshold
 
-  alarm_description = "Latency SLI breached for ${var.service_name}"
+  alarm_description = "Se excedió el umbral de latencia del SLI para ${var.service_name}"
   alarm_actions     = var.alarm_actions
 }
 
@@ -22,7 +22,7 @@ resource "aws_cloudwatch_metric_alarm" "error_rate_sli" {
   statistic           = "Sum"
   threshold           = var.error_threshold
 
-  alarm_description = "Error rate SLI breached for ${var.service_name}"
+  alarm_description = "Se excedió el umbral de tasa de errores del SLI para ${var.service_name}"
   alarm_actions     = var.alarm_actions
 }
 
@@ -33,10 +33,10 @@ resource "aws_cloudwatch_dashboard" "sre_dashboard" {
     widgets = [
       {
         type   = "metric"
-        width = 12
+        width  = 12
         height = 6
         properties = {
-          title = "Latency SLI"
+          title = "SLI de Latencia"
           metrics = [
             [ var.metric_namespace, var.sli_latency_metric ]
           ]
@@ -46,10 +46,10 @@ resource "aws_cloudwatch_dashboard" "sre_dashboard" {
       },
       {
         type   = "metric"
-        width = 12
+        width  = 12
         height = 6
         properties = {
-          title = "Error Rate SLI"
+          title = "SLI de Tasa de Errores"
           metrics = [
             [ var.metric_namespace, var.sli_error_metric ]
           ]
