@@ -38,6 +38,6 @@ Esta API es crítica para el negocio: cualquier degradación impacta directament
 
 Actualmente, no existe una estrategia formal de confiabilidad ni una arquitectura de observabilidad estructurada, lo que limita la capacidad de detección temprana, diagnóstico y respuesta ante incidentes.
 
-## Arquitectura General del Servicio
+## Arquitectura Actual del Servicio
 
 ![Arquitectura de la API de Originación de Créditos](./diagrams/arquitectura-general.png)
