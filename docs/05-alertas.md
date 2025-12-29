@@ -1,12 +1,9 @@
-# Estrategia de Alertas
+## 3. Sistema de Alertas
 
-Las alertas están diseñadas para ser accionables y con bajo nivel de ruido.
+### 3.1 Detección temprana (señales de degradación)
 
-Se disparan ante:
-- Degradación sostenida de latencia
-- Incremento de errores del servidor (5xx)
-- Caídas inesperadas de tráfico
+Señales que anticipan problemas antes de que el usuario los perciba:
 
-Los umbrales se alinean con el impacto al usuario, no con límites arbitrarios
-de infraestructura.
+
+
 
