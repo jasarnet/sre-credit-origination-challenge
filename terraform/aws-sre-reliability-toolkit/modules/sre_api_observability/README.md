@@ -29,3 +29,21 @@ Esta decisión evita el sobre-diseño y refleja la priorización típica en ento
 - Nombre del dashboard
 - Nombres de las alarmas para cada SLI
 
+
+
+
+## Referencias
+
+El diseño y la implementación de este módulo se basan en la documentación oficial de AWS y Terraform, así como en buenas prácticas de Site Reliability Engineering.
+
+### Terraform y CloudWatch
+- Terraform AWS Provider – CloudWatch Metric Alarm  
+  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm
+
+- Terraform AWS Provider – CloudWatch Dashboard  
+  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_dashboard
+
+### AWS CloudWatch
+- Métricas de Application Load Balancer  
+  https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html
+
