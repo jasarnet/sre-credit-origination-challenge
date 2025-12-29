@@ -37,3 +37,7 @@ Estos servicios dependen tanto de la capa de datos como de servicios internos y 
 Esta API es crítica para el negocio: cualquier degradación impacta directamente la originación de créditos, afectando ingresos y la experiencia del cliente.
 
 Actualmente, no existe una estrategia formal de confiabilidad ni una arquitectura de observabilidad estructurada, lo que limita la capacidad de detección temprana, diagnóstico y respuesta ante incidentes.
+
+## Arquitectura General del Servicio
+
+![Arquitectura de la API de Originación de Créditos](./diagrams/arquitectura-general.png)
