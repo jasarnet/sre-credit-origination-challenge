@@ -4,7 +4,7 @@
 
 Señales que anticipan problemas antes de que el usuario los perciba:
 
-![Flujo de severidad de alertas](docs/diagrams/flujo_severidad.png "Flujo de severidad de alertas")
+![Flujo de severidad de alertas](diagrams/flujo_severidad.png "Flujo de severidad de alertas")
 
 
 
