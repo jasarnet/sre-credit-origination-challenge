@@ -11,6 +11,3 @@ El foco de este challenge es:
 Los detalles de implementación se dejan fuera de alcance de forma intencional.
 
 =======
-# sre-credit-origination-challenge
-Desafío técnico de RE: confiabilidad, observabilidad y operaciones
->>>>>>> 04e90ce9604ecae7acc035434c2fe67a993bf461
