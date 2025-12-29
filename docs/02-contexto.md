@@ -10,9 +10,9 @@ La API de originación de créditos se expone a través de un **Application Load
 
 El backend está implementado sobre **Amazon ECS (Fargate)** y procesa la lógica de negocio mediante múltiples servicios, entre ellos:
 
-•credit Application
-•eligibility Service
-•loan-service
+- •credit Application
+- •eligibility Service
+- •loan-service
 
 Estos servicios dependen tanto de la capa de datos como de servicios internos y externos, lo que introduce riesgos adicionales de confiabilidad que deben ser gestionados de forma explícita.
 
