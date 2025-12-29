@@ -4,8 +4,7 @@
 
 Señales que anticipan problemas antes de que el usuario los perciba:
 
-![Arquitectura de la API de Originación de Créditos](./diagrams/![flujo_severidad.]()
-.png)
+![Flujo de severidad de alertas](docs/diagrams/flujo_severidad.png "Flujo de severidad de alertas")
 
 
 
